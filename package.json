@@ -1,9 +1,9 @@
 {
   "name": "agora-app-builder",
   "version": "1.0.0",
-  "scripts": {
+ "scripts": {
     "start": "agora-app-builder-cli",
-    "start:info": "agora-app-builder-cli --info"
+    "ci": "npm install && agora-app-builder-cli install  && agora-app-builder-cli build web --prod &&  cp -r Builds/web testappbuilder/dist && cp testappbuilder/vercel.json testappbuilder/dist"
   },
   "keywords": [],
   "license": "MIT",
